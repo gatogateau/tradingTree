@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>testing forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/optionsTrading.css" type="text/css" />
+
+</head>
+
+<!-- nav bar -->
+
+<body>
+    <!-- testing a field -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Active Trader</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="optionsTrading.html">Options Trading Routine
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nakedRequirements.html">Naked Requirements</a>
+                    </li>
+                    <!-- <li>
+                        <a href="restrictions.html">Restricted Trading</a>
+                    </li> -->
+                    <li>
+                        <a href="marginExamples.html">Margin Examples</a>
+                    </li>
+                    <li class="active">
+                        <a href="QuickReference.html">quick Reference</a>
+                    </li>
+                    <li class="dropdown">
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header class="nav-bar">
+        <h2 class="jumbotron trade-header">
+            <center>Quick Reference</center>
+        </h2>
+    </header>
+
+    <div class="container">
+
+        <div class="row quickRow">
+            <div class="col-sm-6">
+                <h2>Mainframe Commands</h2>
+                <hr width="75%" noshade>
+
+                <table cellpadding="2px" cellspacing="2px">
+                    <tr>
+                        <th>CODE</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr>
+                        <td>AORD ROLL DISP</td>
+                        <td>Auto roll on cds</td>
+                    </tr>
+                    <tr>
+                        <td>B or BBAL</td>
+                        <td>Balances</td>
+                    </tr>
+                    <tr>
+                        <td>BCHK CHG</td>
+                        <td>Check writing Updates</td>
+                    </tr>
+                    <tr>
+                        <td>BCHK ORD</td>
+                        <td>Check orders</td>
+                    </tr>
+                    <tr>
+                        <td>BDOS</td>
+                        <td>order codes</td>
+                    </tr>
+                    <tr>
+                        <td>Bopp</td>
+                        <td>Pairing</td>
+                    </tr>
+                    <tr>
+                        <td>BRAN</td>
+                        <td>Branch</td>
+                    </tr>
+                    <tr>
+                        <td>BRCS</td>
+                        <td>Yearly IRA contributions</td>
+                    </tr>
+                    <tr>
+                        <td>BRDM</td>
+                        <td>Status Called Bonds</td>
+                    </tr>
+                    <tr>
+                        <td>BREV</td>
+                        <td>Order Review </td>
+                    </tr>
+                    <tr>
+                        <td>BSEC DISP FMLY   </td>
+                        <td>Family Funds</td>
+                    </tr>
+                    <tr>
+                        <td>CEH</td>
+                        <td>Cash Extension History</td>
+                    </tr>
+                    <tr>
+                        <td>CHS</td>
+                        <td>Call History</td>
+                    </tr>
+                    <tr>
+                        <td>DTH</td>
+                        <td>Day Trade History</td>
+                    </tr>
+                    <tr>
+                        <td>F2</td>
+                        <td>Previous Day</td>
+                    </tr>
+                    <tr>
+                        <td>FB</td>
+                        <td>Buying Power</td>
+                    </tr>
+                    <tr>
+                        <td>FDST DEL</td>
+                        <td>Delete ICP </td>
+                    </tr>
+                    <tr>
+                        <td>FEML</td>
+                        <td>Verify future money movement</td>
+                    </tr>
+                    <tr>
+                        <td>GCOM</td>
+                        <td>Options Commissions</td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                        <td>Real Time</td>
+                    </tr>
+
+                    <tr>
+                        <td>RRES</td>
+                        <td>Restrictions</td>
+                    </tr>
+                                     
+                    <tr>
+                        <td>SH F7</td>
+                        <td>Executions</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>SSRP</td>
+                        <td>Short Shares</td>
+                    </tr>
+                   
+                  
+
+                </table>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <h2>Route Codes</h2>
+                <hr width="75%" noshade>
+
+                <table>
+                    <tr>
+                        <th>Pre-Market (ARCA) 7-9:28am</th>
+                        <th>After Hours</th>
+                        <th>Day +</th>
+                    </tr>
+                    <tr>
+                        <td>R8/EL = Listed</td>
+                        <td>EG = Listed</td>
+                        <td>5X = ARCA Listed</td>
+                    </tr>
+                    <tr>
+                        <td>R9/EP = OTC</td>
+                        <td>EF = OTC</td>
+                        <td>5W = ARCA OTC</td>
+                    </tr>
+                    <tr>
+                        <td>7A = Dark Pool</td>
+                        <td> </td>
+                        <td>5G = Nasdaq Listed</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>5M = Nasdaq OTC</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+        <div class="row quickRow">
+            <div class="col-sm-12">
+
+
+                <h2>Restrictions</h2><h6><strong>DTBP</strong> = day trade buying power; <strong>ONBP</strong> = over night buying power; <strong>Time and Tick</strong> = DTBP resets after closing day trade</h6>
+                <hr width="75%" noshade>
+
+                <table>
+                    <tr>
+                        <th>Restriction</th>
+                        <th>DTBP</th>
+                        <th>Time and Tick</th>
+                        <th>ONBP</th>
+                        <th>Notes</th>
+
+                    </tr>
+                    <tr>
+                        <td>None</td>
+                        <td>Regular Margin</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Intraday BP displayed</td>
+
+                    </tr>
+                    <tr>
+                        <td>82 only</td>
+                        <td>4x (Cash + Surplus)</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Day Trade Designation </td>
+
+                    </tr>
+                    <tr>
+                        <td>82 w/ open DT call</td>
+                        <td>2x (Cash + Surplus)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                        <td>82 w/ open ME call</td>
+                        <td>1x (Cash + Surplus)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                        <td>82 and 81 from DTC</td>
+                        <td>1x NYSE Surplus if account above $25k</td>
+                        <td>No</td>
+                        <td>Yes if no Trade Thru</td>
+                        <td>Customer can place trade in cash, upon settlement move to Margin</td>
+
+                    </tr>
+                    <tr>
+                        <td>82 and 81 from DTC w/ Trade Thru</td>
+                        <td>1x NYSE Surplus if account above $25k</td>
+                        <td>No</td>
+                        <td>limited to NYSE Surplus</td>
+                        <td>Customer can place trade in cash, upon settlement move to Margin</td>
+
+                    </tr>
+                    <tr>
+                        <td>82 and 81 from ME</td>
+                        <td>only trade in type 1</td>
+                        <td>No</td>
+                        <td>only trade in type 1</td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                        <td>L5</td>
+                        <td>None </td>
+                        <td>None</td>
+                        <td>None</td>
+                        <td>Closing trades ONLY.  Check notes/contact OSG Market Risk</td>
+                    </tr>
+                    <tr>
+                        <td>L8</td>
+                        <td>None </td>
+                        <td>None</td>
+                        <td>None</td>
+                        <td>Closing trades ONLY.  Check notes/contact Westlake Margin</td>
+                    </tr>
+
+                    <tr>
+                        <td>L9</td>
+                        <td>check other restrictions</td>
+                        <td>check other restrictions</td>
+                        <td></td>
+                        <td>E-channel limited to closing trades. Rep can place trade. Check notes/contact Westlake Margin</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>No Fed Calls</td>
+                        <td>No Fed Calls</td>
+                        <td>Yes</td>
+                        <td>No Fed Calls.  Excessive Liqidations. Rep can place trade.  </td>
+                    </tr>
+
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+</body>
+
+</html>

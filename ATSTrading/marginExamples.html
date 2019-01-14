@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>testing forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/optionsTrading.css" type="text/css" />
+    <link rel="stylesheet" href="css/marginExamples.css" type="text/css" />
+    <script src="js/marginExamples.js"></script>
+</head>
+
+<!-- nav bar -->
+
+<body>
+    <!-- testing a field -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Active Trader</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="optionsTrading.html">Options Trading Routine
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nakedRequirements.html">Naked Requirements</a>
+                    </li>
+                    <!-- <li>
+                        <a href="restrictions.html">Restricted Trading</a>
+                    </li> -->
+                    <li class="active">
+                        <a href="marginExamples.html">Margin Examples</a>
+                    </li>
+                    <li>
+                        <a href="QuickReference.html">quick Reference</a>
+                    </li>
+                    <li class="dropdown">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header class="nav-bar">
+        <h2 class="jumbotron trade-header">
+            <center>Margin Examples</center>
+        </h2>
+    </header>
+
+
+    <div class="container whiteback">
+
+        <!-- set up modals or links to the picture screen shot of the customer account example.   -->
+
+        <div id="examplemarg">
+            <div class="row">
+                <div class="col-sm-3">
+                    <H3 class="headLink  alignTitle" onclick="marginEquity ()">Margin Equity Calculation</H3>
+                </div>
+                <div class="col-sm-9">
+                    <div id="marginEq">
+                        <img src="./images/marginEquityCalculation.png">
+                    </div>
+
+
+                    <ul>
+                        <li>Total all Margin credits and debits to calculate Margin Equity</li>
+                        <ul>
+                            <li class="formula">
+                                Margin Equity = Margin Mkt Value – Margin DB – Short Mkt Value + Sht Cr Bal
+                            </li>
+                            <li>$594,925 = $747,525 - $162,859.26 - $244,950 + $255,210.24</li>
+                        </ul>
+                        <br>
+                        <li>Subtract the Security Requirements of the account to get the House Surplus</li>
+                        <ul>
+                            <li class="formula">House Surplus = Margin Equity - Security Reqts</li>
+                            <li>$31,285 = $594,925 - $563,640</li>
+                        </ul>
+                    </ul>
+                    <!-- <p id="line">_______________________________</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="exampleHouseD">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <H3 class="headLink alignTitle" onclick="houseDriver ()">House Driver </H3>
+                </div>
+                <div class="col-sm-9">
+                    <div id="houseD">
+                        <img src="./images/houseDriverEx.png">
+                    </div>
+                    <ul>
+                        <li>Look at NON-MGN Security. What combination will likely get the non-mgn security between House and
+                            Surplus if we add in the cash?</li>
+                        <ul>
+                            <li class="formula">>NON-MGN Security = Net Cash (Total Core Mny Mkts - cash DB BAL) + House Surplus</li>
+                            <li>$9,084 = $8,635 + $448</li>
+                        </ul>
+                        <br>
+                        <li>Because the house surplus + cash equaled the non-mgn security, the House Surplus is the driver</li>
+                        <br>
+                        <li>We can then determine that the Cash/Margin by: NON-MGN Security/House Requirement</li>
+                        <ul>
+                            <li>$30,280 = $9,084 / 30%</li>
+                        </ul>
+                    </ul>
+                    <!-- <p id="line">_______________________________</p> -->
+                </div>
+            </div>
+        </div>
+        <div id="exampleFedD">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <H3 class="headLink" onclick="fedDriver ()">SMA/Fed Driver</H3>
+                </div>
+                <div class="col-sm-9">
+                    <div id="fedD">
+
+
+
+                        <img src="./images/smaDriver.png" width: "100%" height: "auto">
+                    </div>
+                    <ul>
+                        <li class="formula">Look at NON-MGN Security and compare that number with the House Surplus + Cash</li>
+                        <ul>
+                            <li>$110,702 &#8800 $110,705 + $0</li>
+                        </ul>
+                        <li>Because NON-MGN Security does not equal the House Surplus + Cash, we conclude the SMA is the driver</li>
+                        <li class="formula">Confirm the SMA is the driver by: Cash/Margin = SMA / Fed Requirement</li>
+                        <ul>
+                            <li>$237,063 = $118,534.34 / 50%</li>
+                        </ul>
+                    </ul>
+                    <!-- <p id="line">_______________________________</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="exampleLimMarg">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <H3 class="headLink" onclick="limitedMarg ()">Limited Margin (Overnight Buying power)</H3>
+                </div>
+                <div class="col-sm-9">
+                    <div id="limMarg">
+                        <img src="./images/limitedMarginONBP.png" width: "100%" height: "auto">
+                    </div>
+                    <ul>
+                        <li class="formula">Overnight Buying Power = Total Core Mny Mkts*(check net cash) + Margin CR Balance</li>
+                        <ul>
+                            <li>$52,254 = $4,647.33 + $47607.53</li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="exampleDtbp">
+            <div class="row">
+                <div class="col-sm-3 ">
+
+                    <H3 class="headLink" onclick="dayTradeBP ()">Day Trade Buying Power (no restrictions)</H3>
+                </div>
+                <div class="col-sm-9 ">
+                    <div id="dtbp">
+                        <img src="./images/DTBPnoRestrictions.png" width: "100%" height: "auto">
+                    </div>
+                    <ul>
+                        <li class="formula">Day Tr Buying Power = Start of Day NYSE Surplus * 4 (No Account Restriction)</li>
+                        <ul>
+                            <li>$21,879.28 = $5469 * 4</li>
+                        </ul>
+                    </ul>
+                    <!-- <p id="line">_______________________________</p> -->
+                </div>
+            </div>
+        </div>
+        <div id="exampleIntradayBP">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <H3 class="headLink" onclick="intradayBP ()">Intraday Buying Power (new buying power)</H3>
+                </div>
+                <div class="col-sm-9">
+                    <div id="intradayBP">
+                        <img src="./images/intradayBP.png" width: "100%" height: "auto" padding: "10px" margin: "10px">
+                    </div>
+                    <ul>
+                        <li>On the BSUM Screen (F8), enter on the NEXT: "FB"</li>
+                        <li class="formula">New Buying Power = ( Total Core Mny Mkts + NYSE Surplus ) * $ (unrestricted account)</li>
+                        <ul>
+                            <li>$960,739.92 = ( $128,020.98 + $112.164 ) * 4</li>
+                        </ul>
+                    </ul>
+                    <!-- <p id="line">_______________________________</p> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="exampleRestricted">
+            <H3 class="noheadLink">81/82 buying power (no trade thru)</H3>
+        </div>
+        <ul>
+            <li>NYSE Surplus only</li>
+            <li>If no trade thru, Customer can hold overnight with Intraday Margin </li>
+        </ul>
+        <p id="line">_______________________________</p> -->
+
+        <!-- <div>
+            <H3 class="headLink">another one</H3>
+        </div> -->
+
+        <!-- </div> -->
+    </div>
+        <br>
+        <br>
+    
+    
+    
+    
+    
+        <div id="copyright">
+            <!-- copyright box -->
+            &copy copyright by Beowulf
+        </div>
+</body>
+
+</html>

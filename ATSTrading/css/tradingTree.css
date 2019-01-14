@@ -1,0 +1,87 @@
+/* style sheet for the trading tree */
+
+body {
+    background:rgb(135, 212, 212);
+    background-image:url("../images/wallStreet2.jpeg");
+    background-repeat:no-repeat;
+    width:100%;
+    height: auto;
+    background-size:cover;
+
+}
+
+h2 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    color:#bfd9d9;
+    text-shadow:2px 2px black;
+    font-size: 18pt;
+
+}
+a {
+    color:antiquewhite;
+    /* text-shadow:2px 2px black; */
+
+
+}
+.head {
+    color:azure  ;
+    text-shadow:2px 2px black;
+
+}
+
+.trade-header {
+    background: rgba(195, 203, 212, 0.568);
+    margin:4px;
+    margin-left:44px;
+    margin-right:44px;
+    margin-bottom: 11px;
+    padding: 14px;
+    opacity:.8;
+    text-shadow: 1px 1px black;
+
+}
+
+.links {
+    stop-color:antiquewhite;
+    text-shadow:2px 2px black;
+
+}
+.column {
+    /* border: 2px solid black; */
+    /* display: float; */
+    display: table-cell;
+    width: 40%;
+    /* width: 100%; */
+    flood-color:whitesmoke;
+    font-size:16pt;
+}
+.column2 {
+    width:20%
+}
+
+
+.row1 { 
+    /* display: block; */
+    width: 90%;
+    border: 2px solid aliceblue;
+    display: table-row;
+}
+#copyright {
+    background-color: gray;
+    position: relative;
+    display: block;
+    width: 90%;
+    text-align: center;
+    font: 12pt;
+    font: black;
+    display: block;
+    /* border: solid 2pt white; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 7pt;
+    opacity:.4;
+}

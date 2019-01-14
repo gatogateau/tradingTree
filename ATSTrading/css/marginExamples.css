@@ -1,0 +1,165 @@
+body {
+    /* background:rgb(135, 212, 212); */
+    background:rgb(135, 212, 212);
+    background-image:url("../images/wallStreet2.jpeg");
+    background-repeat:no-repeat;
+    width:100%;
+    height: auto;
+    background-size:cover;
+}
+.whiteback {
+    background:white;
+    padding:10pt;
+    opacity: .8;
+}
+/* .alignTitle {
+    margin-top:50%;
+    margin-bottom:50%;
+} */
+
+img {
+    width:90%;
+    height: auto;
+}
+.headLink {
+    text-align:center;
+}
+
+#line {
+    text-align:center;
+}
+.formula{
+    font-weight:bold;
+}
+
+.headLink:hover { 
+    /* background-color: yellow; */
+    /* color: yellow; */
+    font-weight: bold;
+    color:darkred;
+}
+
+#examplemarg {
+    margin:4px;
+    padding:4px;
+    /* border:solid 2pt black; */
+    border:solid 2pt black;
+    
+}
+
+#marginEq {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align:center;
+    background-color:darkslategray;
+    margin: 10px
+}
+
+#exampleHouseD {
+    margin:4px;
+    padding:4px;
+    /* border:solid 2pt black; */
+    border:solid 2pt black;
+}
+
+#houseD {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align:center;
+    background-color:darkslategray;
+    margin: 10px
+}
+
+#exampleFedD {
+    margin:4px;
+    padding:4px;
+    /* border:solid 2pt black; */
+    border:solid 2pt black;
+}
+
+#fedD {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align:center;
+    background-color:darkslategray;
+    margin: 10px
+}
+
+#exampleLimMarg {
+    margin:4px;
+    padding:4px;
+    /* border:solid 2pt black; */
+    border:solid 2pt black;
+}
+
+#limMarg {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align:center;
+    background-color:darkslategray;
+    margin: 10px
+}
+
+#exampleDtbp {
+    margin:4px;
+    padding:4px;
+    /* border:solid 2pt black; */
+    border:solid 2pt black;
+}
+
+#dtbp {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align:center;
+    background-color:darkslategray;
+    margin: 10px
+}
+
+#exampleIntradayBP {
+    margin:4px;
+    padding:4px;
+    /* border:solid 2pt black; */
+    border:solid 2pt black;
+}
+
+#intradayBP {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align:center;
+    background-color:darkslategray;
+    margin: 10px
+}
+
+.trade-header {
+    background: rgba(195, 203, 212, 0.568);
+    margin:4px;
+    margin-left:44px;
+    margin-right:44px;
+    margin-bottom: 11px;
+    padding: 14px;
+    opacity:.8;
+    text-shadow: 1px 1px black;
+
+}
+#copyright {
+    background-color: gray;
+    position: relative;
+    display: block;
+    width: 90%;
+    text-align: center;
+    font: 12pt;
+    font: black;
+    display: block;
+    /* border: solid 2pt white; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 7pt;
+    opacity:.4;
+}

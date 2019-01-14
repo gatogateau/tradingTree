@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>testing forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/nakedRequirements.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/nakedReq.js"></script>
+</head>
+
+<!-- nav bar -->
+
+<body>
+    <!-- testing a field -->
+    <nav class="navbar navbar-default navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Active Trader</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="optionsTrading.html">Options Trading Routine
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="nakedRequirements.html">Naked Requirements</a>
+                    </li>
+                    <!-- <li>
+                        <a href="restrictions.html">Restricted Trading</a>
+                    </li> -->
+                    <li>
+                        <a href="marginExamples.html">Margin Examples</a>
+                    </li>
+                    <li>
+                        <a href="QuickReference.html">quick Reference</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header class="nav-bar">
+        <h2 class="jumbotron trade-header">
+            <center>Naked Options Requirements</center>
+        </h2>
+    </header>
+
+    <div class="container">
+
+        <div class="row row1">
+            <div class="nakedReq col-sm-5">
+                <ul class="reqsList">
+                    <h4>Equity Calls</h4>
+                    <li>The
+                        <strong>higher</strong> of these requirements</li>
+                    <ul>
+                        <li>25% of the underlying stock value - the out of the money amount + the premium</li>
+                        <li>15% of the underlying stock value + the premium</li>
+                    </ul>
+                    <!-- <br> -->
+                    <p>
+                        <center>______________</center>
+                    </p>
+
+                    <h4>Equity Puts</h4>
+                    <li>The
+                        <strong>higher</strong> of these requirements</li>
+                    <ul>
+                        <li>25% of the underlying stock value - the out of the money amount + the premium</li>
+                        <li>premium + 15% of the strike price (for both in the money and out of the money)</li>
+                    </ul>
+                    <!-- <br> -->
+                    <p>
+                        <center>______________</center>
+                    </p>
+
+                    <h4>Uncovered Equity and Index Straddles</h4>
+                    <li>The
+                        <strong>greater</strong> of:</li>
+                    <ul>
+                        <li>The two uncovered requirements + the premium on the other option, per straddle</li>
+                    </ul>
+                    <!-- <br> -->
+                    <p>
+                        <center>______________</center>
+                    </p>
+                    <h4>Equity and Index Spreads</h4>
+                    <h5>
+                        <strong>
+                            <center>For Credit Spreads</center>
+                        </strong>
+                    </h5>
+                    <li>The
+                        <strong>lesser</strong> of:</li>
+                    <ul>
+                        <li>The uncovered margin requirements on the short option</li>
+                        <li>The difference between strikes</li>
+                    </ul>
+                    <!-- <br> -->
+                    <!-- <br> -->
+                    <p>
+                        <center>______________</center>
+                    </p>
+
+
+                    <li>
+                        <strong>**For debit spreads: requirement is the amount of the debit</strong>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-sm-7 margin-calculator">
+
+                <div class="row optionsInput">
+                    <h4>Margin Calculator</h4>
+                    <div class="col-sm-12 inputs">
+                        <div id="test-form">
+                        <!-- <form id="formSubmit"> -->
+                            Underlying Symbol:
+                            <br>
+                            <input type="text" id="symbol" name="symbol">
+                            
+                            <!-- <br> -->
+                            <br>Market Price of Underlying Security:
+                            <br>
+                            <input type="text" id="lastTrade" name="lastTrade">
+                            <!-- <br> -->
+                            <br> Strike price:
+                            <br>
+                            <input type="text" id="strikePrice" name="strikePrice">
+                            <!-- <br> -->
+
+                            
+                            <br> Option Premium:
+                            <br>
+                            <input type="text" id="premium" name="premium">
+                            <!-- <br> -->
+                            <br> Number of Contracts:
+                            <br>
+                            <input type="text" id="contracts" name="contracts">
+                            <br>Call or Put?
+                            <br>
+                            <input type="text" id="callPut" name="callPut" value="call">
+
+                            <br>
+                            <br>
+                            <!-- <br> -->
+                            <button class="btn btn-danger" onclick="resetPage()" id="reset" >reset</button>
+                            <br>
+                            <br>
+
+                        <!-- </form> -->
+                    </div>
+                        <button class="btn btn-primary btn-lg" id="runCalculate" onclick="calculate()">Calculate</button>
+                        <!-- calculations results, use a js calculator -->
+                    </div>
+                </div>
+                <br>
+                <p>______________________</p>
+
+                <div class="row rowCalcs">
+
+                    <h5>Calculation Variables</h5>
+
+                    <div class="col-sm-6">
+                        <div class="optionsCalculations">
+                            <p>Underlying Value</p>
+                            <p>out(+)/in(-) the money</p>
+                            <p>total premium</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- results of calculations -->
+                        <p id="underValue"> </p>
+                        <p id="outOfMoney"> </p>
+                        <p id="totalPremium"> </p>
+
+                    </div>
+
+                </div>
+                <p>______________________</p>
+
+                <!-- results of method 1 and 2, use a js calculator -->
+                <div class="row rowReqs">
+
+                    <h5>calculations results</h5>
+
+                    <!-- <div class="row"> -->
+                    <div class="col-sm-12">
+                        <p id="meth1">method 1</p>
+                        <p id="meth2">method 2</p>
+                    </div>
+                    <!-- <div class="col-sm-6 methodResults">
+                        <p id="method1"> </p>
+                        <p id="method2"> </p>
+                    </div> -->
+                    <!-- </div> -->
+                </div>
+                <p>______________________</p>
+                <div class="row buyingPower">
+                    <div class="col-sm-12">
+
+                        <p id="optionsReqnumber">
+                            <strong>options requirements</strong>
+                        </p>
+                        <p id="nonMargBP">
+                            <strong>Non-marginable buying Power needed</strong>
+                        </p>
+                    </div>
+                    <!-- <div class="col-sm-6">
+                        <p id="optionsReqnumber"> </p>
+                        <p id="nonMargBP"> </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+
+
+
+
+    <div id="copyright">
+        <!-- copyright box -->
+        &copy copyright by Beowulf
+    </div>
+
+
+</body>
+
+</html>

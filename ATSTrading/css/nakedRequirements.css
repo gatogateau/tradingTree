@@ -1,0 +1,98 @@
+/* options naked requirements stylesheet */
+
+
+body {
+    /* background: lightslategray; */
+    background:rgb(135, 212, 212);
+    background-image:url("../images/wallStreet2.jpeg");
+    background-repeat:no-repeat;
+    width:100%;
+    height: auto;
+    background-size:cover;
+}
+
+h4 {
+    text-align:center;
+    font-weight:bold;
+}
+
+h5 {
+    text-align:center;
+    font-weight:bold;
+
+}
+
+.navigation {
+    background: aliceblue;
+
+}
+
+.optionsReqHeader {
+    background: rgba(195, 203, 212, 0.568);
+    margin: -8px;
+    margin-bottom: 11px;
+    margin-left: 44px;
+    padding: 14px;
+    /* width: 94%; */
+    margin-right:44px;
+    /* opacity: .9; */
+}
+.trade-header {
+    background: rgba(195, 203, 212, 0.568);
+    margin:4px;
+    margin-left:44px;
+    margin-right:44px;
+    margin-bottom: 11px;
+    padding: 14px;
+    opacity:.8;
+    text-shadow: 1px 1px black;
+
+}
+#reset {
+    background:red;
+}
+#runCalculate {
+    background: darkslateblue;
+    color: white;
+}
+
+.nakedReq {
+    border:solid 2px black;
+    height: 865px;
+    /* background: rgba(195, 203, 212, 0.979); */
+    background:white;
+    opacity: .7;
+    text-shadow: 0px 0px black
+}
+
+.margin-calculator {
+    border:solid 2px black;
+    padding-left: 20px;
+    height: 865px;
+    /* background: rgba(195, 203, 212, 0.979); */
+    background:white;
+    opacity: .7;
+    text-shadow: 0px 0px black;
+    
+}
+
+.row1 {
+    border:solid 2px black
+}
+
+#copyright {
+    background-color: gray;
+    position: relative;
+    display: block;
+    width: 90%;
+    text-align: center;
+    font: 12pt;
+    font: black;
+    display: block;
+    /* border: solid 2pt white; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 7pt;
+    opacity:.4;
+}

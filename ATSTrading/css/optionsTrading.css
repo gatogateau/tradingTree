@@ -1,0 +1,110 @@
+/* style sheet for the trading tree */
+
+body {
+        background:rgb(135, 212, 212);
+        background-image:url("../images/wallStreet2.jpeg");
+        background-repeat:no-repeat;
+        width:100%;
+        height: auto;
+        background-size:cover;
+    
+}
+
+.trade-header {
+    background: rgba(195, 203, 212, 0.568);
+    margin:4px;
+    margin-left:44px;
+    margin-right:44px;
+    margin-bottom: 11px;
+    padding: 14px;
+    opacity:.8;
+    text-shadow: 1px 1px black;
+
+}
+h4 {
+    text-align:center;
+    font-weight:bold;
+}
+
+.row1 {
+    border:solid 2px black;
+    background: white;
+    opacity: .7;
+    text-shadow: 0px 0px black;
+}
+
+.row2 {
+    border:solid 2px black;
+
+}
+
+.row3 {
+    border:solid 2px black;
+    background: white;
+    opacity: .7;
+    text-shadow: 0px 0px black;
+   
+}
+
+.headQuick {
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+}
+
+.quickRow {
+    background:white;
+    opacity:.8;
+    margin: 2%;
+    margin-bottom:3%
+}
+/* .supportTrade {
+    border-right: solid 2px black 
+} */
+
+.multi-leg {
+    border-left: solid 2px black
+
+}
+
+#copyright {
+    background-color: gray;
+    position: relative;
+    display: block;
+    width: 90%;
+    text-align: center;
+    font: 12pt;
+    font: black;
+    display: block;
+    /* border: solid 2pt white; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 7pt;
+    opacity:.4;
+}
+/* .order-review-col {
+     border-left: solid 2px black 
+
+} */
+table {
+    /* border:1px solid black; */
+    border-spacing:10px;
+}
+th {
+    border-spacing:10px;
+        /* border:1px solid black; */
+    padding-right:10px;
+
+  
+}
+td {
+    border-spacing:10px;
+    /* border:1px solid black; */
+    padding-right:15px;
+
+}
+tr {
+    border-spacing:10px;
+    /* border:1px solid black; */
+
+}

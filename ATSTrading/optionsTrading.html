@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>testing forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/optionsTrading.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- testing a field -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Active Trader</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="optionsTrading.html">Options Trading Routine
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nakedRequirements.html">Naked Requirements</a>
+                    </li>
+                    <!-- <li>
+                        <a href="restrictions.html">Restricted Trading</a>
+                    </li> -->
+                    <li>
+                        <a href="marginExamples.html">Margin Examples</a>
+                    </li>
+                    <li>
+                        <a href="QuickReference.html">quick Reference</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">One more separated link</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <!-- <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form> -->
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header class="nav-bar">
+        <h2 class="jumbotron trade-header">
+            <center>Options Trading Routine</center>
+        </h2>
+    </header>
+
+    <div class="container">
+        <div class="row row0">
+            <div class="question col-sm-12">
+                <!-- <p>What does client want to do?</p> -->
+            </div>
+        </div>
+        <!-- start a row for single or multi leg options -->
+        <div class="row row1">
+            <div class="single-leg col-sm-6">
+                <h4 class="options-header">Single- Leg Options</h4>
+
+                <ul class="list-single-leg">
+                    <li>What is the strategy?</li>
+                    <li>Sell vs Buy/ Open vs Close</li>
+                    <ul>
+                        <li>BCO or BCC</li>
+                        <li>SCO or SCC</li>
+                        <li>BPO or BPC</li>
+                        <li>SPO or SPC</li>
+
+                    </ul>
+
+                    <li>Provide Quote</li>
+                    <li>Trade on the Web</li>
+
+                </ul>
+
+
+
+            </div>
+
+            <div class="multi-leg col-sm-6">
+                <h4 class="options-header">Multi-Leg Options</h4>
+                <ul class="list-multi-leg">
+                    <li>What is the strategy?</li>
+                    <li>Sell vs Buy/ Open vs Close</li>
+                    <ul>
+                        <li>BCO or BCC</li>
+                        <li>SCO or SCC</li>
+                        <li>BPO or BPC</li>
+                        <li>SPO or SPC</li>
+
+                    </ul>
+                    <li>Opening and Closing Trades</li>
+                    <li>Provide Quote</li>
+                    <li>Trade on the Web</li>
+
+                </ul>
+
+
+            </div>
+        </div>
+        <!-- new row -->
+        <div class="row row3">
+            <div class="support-the-trade col-sm-4 supportTrade">
+                <h4>Can the account support the trade</h4>
+                <ul>
+                    <li>Options level</li>
+                    <!-- hover over modal for equity requirements -->
+                    <li class="eqReq">Equity Requirement</li>
+                    <ul>
+                        <li>$20,000 for spreads</li>
+                        <li>$50,000 for index spreads</li>
+                        <li>$5,000 cash spread reserve in IRA</li>
+
+                    </ul>
+                    <li>Cash/Margin needed for Trade</li>
+                    <ul>
+                        <li>Option Requirements (OneView Tools)</li>
+                    </ul>
+                    <li>Adjusted Options Cues and Clues</li>
+                    <ul>
+                        <liBSEC DISP OPTN>
+                            </li>
+                            <li>Cannot trade on the Web</li>
+                            <li>Premiums do not make sense</li>
+                            <li>Additional values in quotes or readback</li>
+                            <li>and extra numerical digit before the yr on the symbol</li>
+
+
+                    </ul>
+                    <li>Trading hours</li>
+                    <ul>
+                        <li>Equity and narrow based index options</li>
+                        <ul>
+                            <li>9:30 am - 4:00pm EST</li>
+                        </ul>
+                        <li>Broad based index options</li>
+                        <ul>
+                            <li>9:30 am - 4:15pm EST</li>
+                        </ul>
+
+
+                    </ul>
+                    <br>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <div class="trade-approval">
+                    <h4>Trade Approval</h4>
+                    <ul>
+                        <!-- create links to reference point -->
+                        <li>Opening Trades</li>
+                        <!-- <ul>create modal to for series 4 -->
+                        <li>>50 contracts</li>
+                        <li>>15 uncovered</li>
+                        <li>No approval required for closing trades</li>
+                    </ul>
+                    <li>Trades larger than 500k</li>
+                    <li>Interest rate index options</li>
+                    <li>routed or Sourced orders</li>
+                    </ul>
+
+                </div>
+
+                <br>
+                <br>
+
+                <div class="confirm-trade">
+                    <h4>Confirm the Trade</h4>
+                    <ul>
+                        <li>Enter order under Single-Leg/Multi-Leg options in RWOE</li>
+                        <li>Provide full read-back on each individual trade</li>
+                        <li>if the customer agrees that the order is correct, click CONFIRM</li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="row"> -->
+            <div class="col-sm-4 order-review-col">
+                <div class="order-review ">
+                    <h4>Order Review</h4>
+                    <ul>
+                        <li>Check order review in RWOE/BREV</li>
+                        <ul>
+                            <li>Make sure orders were entered correctly</li>
+                        </ul>
+                        <li>Update Order Log</li>
+                        <ul>
+                            <li>include trade initials if approval was required</li>
+                        </ul>
+                        <li>Offer a confirmation number</li>
+
+                    </ul>
+                </div>
+               <!-- <br> -->
+
+                <div class="summarize ">
+                    <h4>Summarize the Next Steps</h4>
+                    <ul>
+                        <li>Summarize trades placed</li>
+                        <ul>
+                            <li>Settlement time frames</li>
+                            <li>When distributions will go out</li>
+                            <li>What is the customer/rep responsibility</li>
+                        </ul>
+                    </ul>
+
+                </div>
+                <!-- <br> -->
+                <div class="document-trade ">
+
+                    <h4>Document the trade</h4>
+                    <ul>
+                        <li>Siebel Note</li>
+                        <ul>
+                            <li>Trades Placed</li>
+                            <li>Client next steps</li>
+                            <li>Adjustments</li>
+                            <li>Trade approval if received</li>
+
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+
+
+
+    <div id="copyright">
+        <!-- copyright box -->
+        &copy copyright by Beowulf
+    </div>
+</body>
+
+</html>
